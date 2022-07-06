@@ -1,0 +1,25 @@
+$base-background-color: #e5e5e5;
+$footer-faded-color: rgb(194, 194, 194);
+$footer-faded-color-hover: #1a1a4572;
+$image-background-color: rgba(88, 46, 107, 0.137);
+$image-box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.55);
+$small: 350px;
+$smallest: 280px;
+
+.Spacer {
+    display: flex;
+    flex: 1;
+}
+
+.FlexRowContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.TextCenter{
+    text-align: center;
+}
+
+.DefaultFontSizePc{
+    font-size: 1.2em !important;
+}

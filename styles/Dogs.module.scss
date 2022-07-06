@@ -1,0 +1,55 @@
+@import './Variables.module.scss';
+
+.Gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ImgDataContainer{
+    display: block;
+    float: left;
+    position: relative;
+    margin: 10px;
+    padding: 5px 0;
+    width: 25vw;
+    min-width: 300px;
+    max-width: 400px;
+    box-shadow: $image-box-shadow;
+    background-color: $image-background-color;
+    h3{
+        text-align: center;
+        margin: 10px 0;
+    }
+    p{
+        margin: 2px 0;
+    }
+}
+
+.ImgDataContainerMob{
+    position: relative;
+    margin: 10px;
+    width: 96vw;
+    max-width: 400px;
+    padding: 5px 0;
+    box-shadow: $image-box-shadow;
+    background-color: $image-background-color;
+    h3{
+        text-align: center;
+        margin: 10px 0;
+    }
+    p{
+        margin: 2px 0;
+    }
+}
+
+.ImageContainer{
+    box-sizing: content-box;
+    padding: 2px;
+    border: 1px solid black;
+    background-color: rgb(168, 109, 109);
+}
+
+.DataContainer{
+    padding: 7px 0;
+}

@@ -1,0 +1,88 @@
+@import './Variables.module.scss';
+
+.AboutPageWrapper{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutCoverImageWrapper{
+    position: relative;
+    margin: 10px;
+    width: 100%;
+    max-width: 750px;
+}
+
+.AboutCoverImageWrapperMob{
+    position: relative;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+    width: 100%;
+}
+
+.AboutCoverImageContainer{
+    width: 100%;
+    margin: auto;
+    box-shadow: $image-box-shadow;
+}
+
+.AbotuTextContainer{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.AbotuTextContainerMob{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.ContactTextContainer{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+}
+
+.EmailText{
+    color: blue;
+}
+
+.SocialIconsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.SocialIconFacebook{
+    display: block;
+    float: left;
+    margin-right: 5px;
+    font-size: 4em;
+    cursor: pointer;
+    color: rgb(27, 27, 196);
+    background: rgb(255, 255, 255);
+    &:hover{
+        color: $footer-faded-color-hover
+    }
+}
+
+.SocialIconInstagram{
+    display: block;
+    float: left;
+    margin-right: 5px;
+    font-size: 4em;
+    cursor: pointer;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    color: white;
+    &:hover{
+        color: $footer-faded-color-hover
+    }
+}

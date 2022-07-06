@@ -1,0 +1,37 @@
+@import './Variables.module.scss';
+
+.Gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ImgDataContainer{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 5px;
+    width: 30vw;
+    padding: 10px;
+    box-shadow: $image-box-shadow;
+    background-color: $image-background-color
+}
+
+.ImgDataContainerMob{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0 5px;
+    width: 96vw;
+    max-width: 400px;
+    background-color: $image-background-color
+}
+
+.ImageContainer{
+    display: block;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    padding: 2px;
+    border: 1px solid black;
+}

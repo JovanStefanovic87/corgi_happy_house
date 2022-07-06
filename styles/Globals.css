@@ -1,0 +1,124 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 16px;
+  font-family: sans-serif, Ubuntu, Helvetica Neue, Oxygen, Segoe UI, Droid Sans,Cantarell, -apple-system, Roboto;
+  background-color: #e5e5e5;
+}
+
+header{
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  align-items: center;
+  width: 100vw;
+  height: 2.5em;
+  top: 0;
+  z-index: 100;
+  background-color: #e5e5e5;
+}
+
+header::after{
+  content: '';
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  top: 2.5em;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 5px;
+  background-color: #494949;
+}
+
+footer a {
+  padding: 0 1px;
+  color: white;
+}
+
+main{
+  display: block;
+  position: relative;
+  padding-top:2.5em;
+  padding-bottom: 5em;
+}
+
+/* main::before{
+  content: '';
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.05;
+  background-image: url('../assets/Img//paw.png');
+  background-repeat: repeat;
+  background-position: 50% 0;
+  background-size: 60px 40px;
+} */
+
+footer p {
+  color: #898989;
+}
+
+h2{
+  text-align: center;
+  font-size: 2em;
+  margin: auto;
+  margin-top: 5px;
+}
+
+h2::after{
+  content: '';
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 2px;
+  margin: 10px 0 15px 0;
+  background-image: linear-gradient(to right, #ffffff, #d37a05, #ffffff);
+}
+
+p{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+select{
+  appearance: none;
+  outline: 0;
+  /* border: 0; */
+  box-shadow: none;
+  /* Personalize */
+  margin-right: 5px;
+  border-radius: .25em;
+  padding: 0.3em 1em;
+  color: rgb(255, 230, 0);
+  background-color: rgb(0, 35, 77);
+  background-image: none;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+

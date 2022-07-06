@@ -1,0 +1,100 @@
+@import './Variables.module.scss';
+
+.Layout{
+    position: relative;
+    min-height: 100vh;
+}
+
+.BackgroundPattern{
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.05;
+    background-image: url('../assets/Img//paw.png');
+    background-repeat: repeat;
+    background-position: 50% 0;
+    background-size: 60px 40px;
+}
+.Transparentlayer{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 98;
+    background-color: $footer-faded-color-hover
+    
+}
+
+.Dropdown{
+    position: fixed;
+    width: 100vw;
+    top: 2.6em;
+    margin: 0;
+    padding-left: 0;
+    z-index: 99;
+    background-color: $base-background-color;
+    li{
+        width: 100%;
+        list-style: none;
+        padding: 5px;
+        text-align: center;
+        font-size: 1.2em;
+        border: 1px solid black {
+            collapse: collapse;
+        };
+        background-image: linear-gradient(to top, #e5e5e5, #989898, #e5e5e5);
+        &:active {
+            background-image: linear-gradient(to left, #e5e5e5, #989898, #e5e5e5);
+        }
+        a{
+            width: 100%;
+        }
+    }
+}
+
+.NavButtonGroup{
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    padding: 5px 10px;
+}
+
+.FooterNavButtonGroup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 320px;
+    padding: 20px;
+}
+
+.LogoTxt {
+    flex: 1;
+    font-size: 1.4em;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    @media screen and (max-width: $small) {
+        font-size: 15px;
+    }
+    @media screen and (max-width: $smallest) {
+        font-size: 13px;
+    }
+}
+
+.CopyRight{
+    font-size: 0.6em;
+    margin: 0;
+    padding: 5px;
+}
+
+.SocialIcon{
+    margin-right: 5px;
+    font-size: 2em;
+    cursor: pointer;
+    color: $footer-faded-color;
+    &:hover{
+        color: $footer-faded-color-hover
+    }
+}
